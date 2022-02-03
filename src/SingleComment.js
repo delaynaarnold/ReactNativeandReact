@@ -3,23 +3,24 @@ import Planet1 from './Images/planetone.png';
 
 
 
-const SingleComment = () => {
+const SingleComment = (props) => {
+    console.log(props)
     return (
         <div className='comment'>
         <a href="/" className='avatar'>
-            <img src={Planet1} alt="profile picture"/>
+            <img src={props.picture} alt="profile picture"/>
         </a>
         <div className='content'>
             <a href="/" className='author'>
-                Sarah
+               { props.name }
             </a>
             <div className='metadata'>
                 <span className='date'>
-                    today at 5:00PM
+                    {props.time}
                 </span> 
             </div>
             <div className='text'>
-                It's Amazing
+               {props.comment}
             </div>
         </div>
     </div> 
