@@ -1,5 +1,5 @@
 import React from 'react';
-import Planet1 from './Images/planetone.png';
+
 
 
 
@@ -20,7 +20,7 @@ const SingleComment = (props) => {
                 </span> 
             </div>
             <div className='text'>
-               {props.comment}
+               { props.comment }
             </div>
         </div>
     </div> 
